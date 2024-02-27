@@ -19,7 +19,7 @@ public class PackageSimulator {
             else if (randomZipCode2.length() == 4) {
                 randomZipCode2 = "0" + randomZipCode2;
             }
-            double randomWeight = (int) (Math.random() * 150) + 1;
+            double randomWeight = (int) (Math.random() * 50) + 1;
             double randomLength = (int) (Math.random() * 35) + 1;
             double randomWidth = (int) (Math.random() * 35) + 1;
             double randomHeight = (int) (Math.random() * 35) + 1;

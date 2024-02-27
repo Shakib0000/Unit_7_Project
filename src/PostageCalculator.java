@@ -5,8 +5,8 @@ public class PostageCalculator {
         int countyCode2 = Integer.parseInt(zipCode2.substring(0,3));
         cost += (weight / 0.10) * 0.05;
         cost += (double) (Math.abs(countyCode1 - countyCode2)) / 100;
-        if (length*width*height > 36) {
-            cost += ((length*width*height) - 36) * 0.10;
+        if (length+width+height > 36) {
+            cost += ((length+width+height) - 36) * 0.10;
         }
         if (weight > 40) {
             cost += ((weight - 40) / 0.10) * 0.10;
@@ -20,8 +20,8 @@ public class PostageCalculator {
         int countyCode2 = Integer.parseInt(address2.getZipCode().substring(0,3));
         cost += (weight / 0.10) * 0.05;
         cost += (double) (Math.abs(countyCode1 - countyCode2)) / 100;
-        if (length*width*height > 36) {
-            cost += ((length*width*height) - 36) * 0.10;
+        if (length+width+height > 36) {
+            cost += ((length+width+height) - 36) * 0.10;
         }
         if (weight > 40) {
             cost += ((weight - 40) / 0.10) * 0.10;
@@ -41,8 +41,8 @@ public class PostageCalculator {
         int countyCode2 = Integer.parseInt(address2.getZipCode().substring(0,3));
         cost += (weight / 0.10) * 0.05;
         cost += (double) (Math.abs(countyCode1 - countyCode2)) / 100;
-        if (length*width*height > 36) {
-            cost += ((length*width*height) - 36) * 0.10;
+        if (length+width+height > 36) {
+            cost += ((length+width+height) - 36) * 0.10;
         }
         if (weight > 40) {
             cost += ((weight - 40) / 0.10) * 0.10;
